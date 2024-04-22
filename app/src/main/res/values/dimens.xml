@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="meeting_subtitle_text_size">17sp</dimen>
+    <dimen name="meeting_title_text_size">20sp</dimen>
+    <dimen name="meeting_color_view_size">50dp</dimen>
+    <dimen name="meeting_color_view_margin">20dp</dimen>
+    <dimen name="form_field_margin_top">20dp</dimen>
+</resources>

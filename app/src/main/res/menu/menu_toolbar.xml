@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/filter_by_date"
+        app:showAsAction="never"
+        android:title="@string/menu_action_filter_by_date_txt" />
+
+    <item
+        android:id="@+id/filter_by_location"
+        app:showAsAction="never"
+        android:title="@string/menu_action_filter_by_location_txt"
+        />
+
+    <item
+        android:id="@+id/delete_by_date"
+        app:showAsAction="never"
+        android:title="@string/menu_action_delete_by_date_txt" />
+
+    <item
+        android:id="@+id/delete_by_location"
+        app:showAsAction="never"
+        android:title="@string/menu_action_delete_by_location_txt" />
+
+    <item
+        android:id="@+id/delete_all_meetings"
+        app:showAsAction="never"
+        android:title="@string/menu_action_delete_all_meetings_txt" />
+
+    <item
+        android:id="@+id/reset_filter"
+        app:showAsAction="never"
+        android:title="@string/menu_action_reset_filters_txt"
+        />
+
+
+</menu>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:id="@+id/schedule_meeting_activity_views_root"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ScheduleMeetingActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="25dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/locationNameEditText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Enter new location name" />
+
+            <Button
+                android:id="@+id/add_location_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add Location" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/meeting_location_selector"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="@dimen/form_field_margin_top"/>
+
+            <Button
+                android:id="@+id/delete_location_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delete Location" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/meeting_location_error_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/location_selector_error_text"
+            app:drawableRightCompat="@drawable/ic_error_24"
+            android:drawablePadding="10dp"
+            android:visibility="invisible"
+            android:textColor="@color/red"/>
+
+
+        <!--        <LinearLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content">-->
+
+<!--            <Spinner-->
+<!--                android:id="@+id/meeting_location_selector"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="@dimen/form_field_margin_top"/>-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/meeting_location_error_hint"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="@string/location_selector_error_text"-->
+<!--                app:drawableRightCompat="@drawable/ic_error_24"-->
+<!--                android:drawablePadding="10dp"-->
+<!--                android:visibility="invisible"-->
+<!--                android:textColor="@color/red"/>-->
+
+<!--        </LinearLayout>-->
+
+
+
+        <EditText
+            android:id="@+id/date_picker_action"
+            android:focusable="false"
+            android:cursorVisible="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/form_field_margin_top"
+            android:hint="@string/date_picker_action_hint"/>
+
+        <EditText
+            android:id="@+id/time_picker_action"
+            android:focusable="false"
+            android:ems="10"
+            android:cursorVisible="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/form_field_margin_top"
+            android:hint="@string/time_picker_action_hint"/>
+
+
+        <EditText
+            android:id="@+id/duration_picker_action"
+            android:focusable="false"
+            android:cursorVisible="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/form_field_margin_top"
+            android:hint="@string/duration_picker_action_hint"/>
+
+        <EditText
+            android:id="@+id/meeting_subject_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/form_field_margin_top"
+            android:hint="@string/meeting_subject_edit_text_hint"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/form_field_margin_top"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/participant_email_edit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/participant_emails_edit_text_hint"/>
+
+            <Button
+                android:id="@+id/add_participant_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="?android:attr/borderlessButtonStyle"
+                android:textColor="?attr/colorPrimary"
+                android:text="@string/add_participant_email_btn_text"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/added_participant_emails_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/added_participant_emails"
+            android:maxLines="4"
+            android:ellipsize="end"/>
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/submit_button_text"
+            android:layout_gravity="center"/>
+
+
+    </LinearLayout>
+
+</ScrollView>
